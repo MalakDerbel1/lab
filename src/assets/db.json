@@ -1,0 +1,20 @@
+{
+  "membres": [
+    {
+      "id": "1",
+      "cin": "11138465",
+      "name": "malak",
+      "cv": "malak",
+      "type": "student",
+      "createdDate": "12/12/2024"
+    },
+    {
+      "id": "2",
+      "cin": "11185796",
+      "name": "adam",
+      "cv": "adam",
+      "type": "student",
+      "createdDate": "12/11/2024"
+    }
+  ]
+}
