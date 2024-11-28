@@ -1,8 +1,9 @@
 .table 
  { width : 100% } 
 .button-container {
-    margin-bottom: 20px;
-    margin-right: 100px; /* Adjust the value to control the spacing */
+    margin-bottom: 30px;
+    margin-right: 100px; 
+    margin-top: 40px; /* Adjust the value to control the spacing */
      /* Adjust the value to control the spacing */
   }
   .table-container {

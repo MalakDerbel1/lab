@@ -1,0 +1,41 @@
+.dashboard-card {
+  background-color: #ffffff; /* Couleur de fond blanche */
+  color: #333; /* Couleur du texte */
+  text-align: center; /* Centrer le texte */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  border-radius: 12px; /* Coins arrondis */
+  padding: 16px; /* Espacement interne */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animation */
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px); /* Légère élévation au survol */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée */
+}
+
+.dashboard-title {
+  font-size: 1.2em; /* Taille du texte pour le titre */
+  font-weight: bold; /* Texte en gras */
+  margin-bottom: 8px; /* Espacement inférieur */
+}
+
+.dashboard-value {
+  font-size: 1.5em; /* Texte plus grand pour la valeur */
+  font-weight: 600; /* Texte semi-gras */
+  color: #518fd1; /* Couleur principale pour les valeurs */
+}
+
+[fxLayout] {
+  margin: 14px; /* Ajout d’un espacement global */
+}
+
+@media (max-width: 760px) {
+  [fxLayout="row"] {
+    flex-direction: column; /* Aligne les cartes verticalement sur les petits écrans */
+    align-items: center;
+  }
+  .dashboard-card {
+    margin-bottom: 14px; /* Espacement entre les cartes */
+    width: 100%; /* Prend toute la largeur */
+  }
+}

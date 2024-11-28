@@ -26,56 +26,43 @@
   ],
   "evt": [
     {
-      "id": "1",
+      "id": "008b",
       "titre": "conf1",
-      "datedebut": "lundi",
-      "datefin": "lundi",
+      "datedebut": "2024-11-27T23:00:00.000Z",
+      "datefin": "2024-11-28T23:00:00.000Z",
       "lieu": "sfax"
     },
     {
-      "id": "2",
+      "id": "7e07",
       "titre": "conf2",
-      "datedebut": "lundi",
-      "datefin": "lundi",
+      "datedebut": "2024-11-04T23:00:00.000Z",
+      "datefin": "2024-11-28T23:00:00.000Z",
       "lieu": "tunis"
     },
     {
-      "id": "f830",
-      "title": "Conf3",
-      "datedebut": null,
-      "datefin": null,
-      "lieu": "sfax"
-    },
-    {
-      "id": "36d9",
-      "title": "conf3",
-      "datedebut": "12/12/2024",
-      "datefin": "01-01-2025",
-      "lieu": "sfax"
-    },
-    {
-      "id": "2eee",
-      "title": null,
-      "datedebut": "mm",
-      "datefin": "mmmmm",
-      "lieu": "mm"
-    },
-    {
-      "id": "fde8",
-      "title": null,
-      "datedebut": "uu",
-      "datefin": "uu",
-      "lieu": "uu"
-    },
-    {
-      "id": "db1c",
-      "titre": "u",
-      "datedebut": "u",
-      "datefin": "u",
-      "lieu": "u"
-    },
-    {
-      "id": "5788"
+      "id": "5fcc",
+      "titre": "con3",
+      "datedebut": "2024-11-30T23:00:00.000Z",
+      "datefin": "2024-12-01T23:00:00.000Z",
+      "lieu": "sousse"
     }
-  ]
+  ],
+  "Pub": [{
+    
+"id":"1",
+"type":"image",
+"titre":"pub1",
+"lien":"...com",
+"date":"2024-12-01T23:00:00.000Z",
+"Sourcepdf":"pdf"
+
+  } ],
+
+
+  "Tools": [{
+"id":"1",
+    "date":"2024-12-01T23:00:00.000Z",
+    "source":"545"
+  } ]
+
 }

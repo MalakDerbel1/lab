@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialog, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-modalevt',
@@ -9,20 +9,36 @@ import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 })
 export class ModalevtComponent implements OnInit {
 
-
+x:any;
   form!:FormGroup
-  constructor(public dialogRef: MatDialogRef<ModalevtComponent>) { }
+  constructor(public dialogRef: MatDialogRef<ModalevtComponent>, @Inject(MAT_DIALOG_DATA) data: any) {
+    // reception de evt by @inject
+   this.x=data;
+   console.log("from modal",this.x)
+  }
 
   ngOnInit(){
-    //initialisation de form 
+
+    if(this.x){
+      //extraction from x 
+   //initialisation de form 
+   this.form=new FormGroup({
+    titre:new FormControl(this.x.titre ,[Validators.required]),
+    datedebut:new FormControl(this.x.datedebut ,[Validators.required]),
+    datefin:new FormControl(this.x.datefin ,[Validators.required]),
+    lieu:new FormControl(this.x.lieu ,[Validators.required]),
+  })
+    }else{
+       //initialisation de form 
     this.form=new FormGroup({
       titre:new FormControl(null ,[Validators.required]),
       datedebut:new FormControl(null ,[Validators.required]),
       datefin:new FormControl(null ,[Validators.required]),
       lieu:new FormControl(null ,[Validators.required]),
-  
     })
+    } 
   }
+
 
   save() {
     this.dialogRef.close(this.form.value);

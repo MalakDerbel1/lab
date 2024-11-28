@@ -47,6 +47,7 @@ this.Ms.getMemberById(this.idcourant).subscribe((M)=>{
 
   })
 }}
+
 sub(){
   this.idcourant=this.activateRoute.snapshot.params['id'];
   if(!!this.idcourant){
@@ -55,10 +56,7 @@ sub(){
       //redirection 
       this.router.navigate([''])
     })
-
-
   }else
-  
   {
   console.log(this.form.value)
   //appeler la fonction du service

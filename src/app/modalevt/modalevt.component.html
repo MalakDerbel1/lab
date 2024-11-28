@@ -6,18 +6,16 @@
         <input matInput
                 placeholder="title"
                formControlName="titre">
-    </mat-form-field>
-    
-    <mat-form-field>
-        <input matInput
-                placeholder="date debut"
-               formControlName="datedebut">
-    </mat-form-field>
-    <mat-form-field>
-        <input matInput
-                placeholder="date fin"
-               formControlName="datefin">
-    </mat-form-field>
+    </mat-form-field>  
+
+    <mat-date-range-input [formGroup]="form" [rangePicker]="picker">
+        <input matStartDate formControlName="datedebut" placeholder="Start date">
+        <input matEndDate formControlName="datefin" placeholder="End date">
+      </mat-date-range-input>
+      <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-date-range-picker #picker></mat-date-range-picker>
+ 
     <mat-form-field>
         <input matInput
                 placeholder="lieu"

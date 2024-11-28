@@ -1,1 +1,22 @@
-<p>dashboard works!</p>
+<div fxLayout="row" fxLayoutAlign="space-around center"  >
+    <mat-card class="dashboard-card">
+      <mat-card-content class="dashboard-title">Members</mat-card-content>
+      <mat-card-content class="dashboard-value">{{ nbMembers }}</mat-card-content>
+    </mat-card>
+  
+    <mat-card class="dashboard-card">
+      <mat-card-content class="dashboard-title">Events</mat-card-content>
+      <mat-card-content class="dashboard-value">{{ nbEvts }}</mat-card-content>
+    </mat-card>
+  
+    <mat-card class="dashboard-card">
+      <mat-card-content class="dashboard-title">Tools</mat-card-content>
+      <mat-card-content class="dashboard-value">{{ nbTools }}</mat-card-content>
+    </mat-card>
+  
+    <mat-card class="dashboard-card">
+      <mat-card-content class="dashboard-title">Publications</mat-card-content>
+      <mat-card-content class="dashboard-value">{{ nbPubs }}</mat-card-content>
+    </mat-card>
+  </div>
+  

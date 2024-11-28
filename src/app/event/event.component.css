@@ -1,14 +1,20 @@
 .table 
  { width : 100% } 
-.button-container {
+ 
+ .button-container {
     margin-bottom: 20px;
     margin-right: 100px; /* Adjust the value to control the spacing */
      /* Adjust the value to control the spacing */
   }
-  .table-container {
+.table-container {
     margin: 0 auto; /* Centers the table */
     padding: 0 10px; /* Adds padding to the sides */
     max-width: 1340px; /* Limits the width of the table */
     width: 100%; /* Ensures responsiveness */
+  }
+.filter-container{
+   
+    margin-left: 99px;
+
   }
   

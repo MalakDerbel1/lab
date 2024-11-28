@@ -25,6 +25,9 @@ import { ToolsComponent } from './tools/tools.component';
 import { EventComponent } from './event/event.component';
 import { ArticleComponent } from './article/article.component';
 import { ModalevtComponent } from './modalevt/modalevt.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -41,8 +44,8 @@ import { ModalevtComponent } from './modalevt/modalevt.component';
     ModalevtComponent //appel de selecter
   ],
   imports: [
-    MatSidenavModule,MatToolbarModule,MatListModule,MatMenuModule,
-    BrowserModule,
+    MatSidenavModule,MatToolbarModule,MatListModule,MatMenuModule,MatDatepickerModule,
+    BrowserModule,MatNativeDateModule,MatCardModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTableModule,
