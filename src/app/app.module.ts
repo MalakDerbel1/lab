@@ -15,7 +15,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import { ConfirmComponent } from './confirm/confirm.component';
 import {MatDialogModule} from '@angular/material/dialog';
-
+import { TemplateComponent } from './template/template.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatListModule} from '@angular/material/list';
+import {MatMenuModule} from '@angular/material/menu';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ToolsComponent } from './tools/tools.component';
+import { EventComponent } from './event/event.component';
+import { ArticleComponent } from './article/article.component';
+import { ModalevtComponent } from './modalevt/modalevt.component';
 
 
 @NgModule({
@@ -23,9 +32,16 @@ import {MatDialogModule} from '@angular/material/dialog';
     AppComponent,
     MemberComponent,
     MemberFormComponent,
-    ConfirmComponent //appel de selecter
+    ConfirmComponent,
+    TemplateComponent,
+    DashboardComponent,
+    ToolsComponent,
+    EventComponent,
+    ArticleComponent,
+    ModalevtComponent //appel de selecter
   ],
   imports: [
+    MatSidenavModule,MatToolbarModule,MatListModule,MatMenuModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

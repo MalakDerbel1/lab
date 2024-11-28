@@ -30,5 +30,16 @@ export class MemberService {
     {
       return this.httpClient.delete<void>(`http://localhost:3000/membres/${id}`);
     }
+
+    getMemberById(id:string) : Observable<Member> 
+    {
+      return this.httpClient.get<Member>(`http://localhost:3000/membres/${id}`);
+    }
+    
+    updateMember(m:Member,id:string) : Observable<void> 
+    {
+      return this.httpClient.put<void>(`http://localhost:3000/membres/${id}`,m);
+    }
+
    }
 

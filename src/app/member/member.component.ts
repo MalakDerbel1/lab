@@ -11,12 +11,13 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrls: ['./member.component.css']
 })
 export class MemberComponent implements OnInit{
+
 //injection des dependances
 //utiliser un service dans un composant
-
 constructor(private Ms:MemberService ,private dialog:MatDialog){}
 
 dataSource:Member[]=[]
+
 // se charge avant le constructeur -- plus rapide
 ngOnInit(){
   //gauche : variable droite:action
@@ -25,6 +26,8 @@ ngOnInit(){
   })
 }
 displayedColumns: string[] = ['1', '2', '3', '4','5','6','7'];
+
+
 delete(id:string):void{
 
   //1-ouvrir la boite

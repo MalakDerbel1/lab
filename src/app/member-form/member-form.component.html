@@ -1,9 +1,9 @@
 <p> Create New Member</p>
 <form [formGroup]="form" (ngSubmit)="sub()">
     <p>
-<mat-form-field appearance="fill">
+<mat-form-field hidden="true" appearance="fill">
     <mat-label>Cin</mat-label>
-    <input matInput placeholder="cin" formControlName="cin">
+    <input matInput placeholder="cin" formControlName="cin" >
   </mat-form-field>
 </p>
   <mat-form-field appearance="fill">

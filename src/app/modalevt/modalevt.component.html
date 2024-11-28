@@ -1,0 +1,33 @@
+<h2 mat-dialog-title>Add event</h2>
+
+<mat-dialog-content [formGroup]="form">
+  
+    <mat-form-field>
+        <input matInput
+                placeholder="title"
+               formControlName="titre">
+    </mat-form-field>
+    
+    <mat-form-field>
+        <input matInput
+                placeholder="date debut"
+               formControlName="datedebut">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput
+                placeholder="date fin"
+               formControlName="datefin">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput
+                placeholder="lieu"
+               formControlName="lieu">
+    </mat-form-field>
+ 
+</mat-dialog-content>
+<div fxLayout="row" fxLayoutAlign="end center">
+
+<mat-dialog-actions>
+    <button mat-stroked-button (click)="close()">Close</button>
+    <button  mat-stroked-button  (click)="save()">Save</button>
+</mat-dialog-actions></div>
