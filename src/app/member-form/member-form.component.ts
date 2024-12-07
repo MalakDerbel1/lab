@@ -34,7 +34,6 @@ this.Ms.getMemberById(this.idcourant).subscribe((M)=>{
     type:new FormControl(M.type ,[Validators.required]),
 
   })
-
 })
 }else{
 

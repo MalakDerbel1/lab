@@ -1,0 +1,49 @@
+/* General styling for the card */
+mat-card {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title styling */
+  mat-card-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Content styling */
+  mat-card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* Button styling */
+  mat-card-content button {
+    background-color: #4285f4; /* Google Blue */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  mat-card-content button:hover {
+    background-color: #357ae8;
+  }
+  
+  mat-card-content button:active {
+    background-color: #2c6ac8;
+  }
+  

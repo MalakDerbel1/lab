@@ -39,3 +39,18 @@
     width: 100%; /* Prend toute la largeur */
   }
 }
+.chart-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Deux colonnes égales */
+  gap: 20px; /* Espacement entre les graphiques */
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.chart-wrapper {
+  height: 500px;
+  width: 700px;
+}
+
+
+

@@ -19,4 +19,31 @@
       <mat-card-content class="dashboard-value">{{ nbPubs }}</mat-card-content>
     </mat-card>
   </div>
+  <!-- labels= chartLabels: les x / type : type de courbe / datasets= chartData: axe des y-->
+  <div class="chart-container" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 50px;">
+    <div class="chart-wrapper" style="height: 500px; width: 700px;">
+      <canvas baseChart
+              [type]="'line'"
+              [datasets]="chartData"
+              [labels]="chartLabels"
+              [options]="chartOptions">
+      </canvas>
+    </div>
+    <div class="chart-wrapper" style="height: 450px; width: 550px;">
+      <canvas baseChart
+              [type]="'pie'"
+              [datasets]="chartData2"
+              [labels]="chartLabels2"
+              [options]="chartOptions2">
+      </canvas>
+    </div>
+    <div class="chart-wrapper" style="height: 450px; width: 550px;">
+      <canvas baseChart
+              [type]="'doughnut'"
+              [datasets]="chartData3"
+              [labels]="chartLabels3"
+              [options]="chartOptions3">
+      </canvas>
+    </div>
+  </div>
   

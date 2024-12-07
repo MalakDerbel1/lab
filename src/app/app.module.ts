@@ -28,7 +28,9 @@ import { ModalevtComponent } from './modalevt/modalevt.component';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatCardModule} from '@angular/material/card';
-
+import {NgChartsModule} from 'ng2-charts';
+import { LoginComponent } from './login/login.component';
+import { FirebaseModule } from './Firebase.module';
 
 @NgModule({
   declarations: [
@@ -41,10 +43,11 @@ import {MatCardModule} from '@angular/material/card';
     ToolsComponent,
     EventComponent,
     ArticleComponent,
-    ModalevtComponent //appel de selecter
+    ModalevtComponent,
+    LoginComponent //appel de selecter
   ],
   imports: [
-    MatSidenavModule,MatToolbarModule,MatListModule,MatMenuModule,MatDatepickerModule,
+    MatSidenavModule,MatToolbarModule,MatListModule,MatMenuModule,MatDatepickerModule,NgChartsModule,
     BrowserModule,MatNativeDateModule,MatCardModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -57,7 +60,8 @@ import {MatCardModule} from '@angular/material/card';
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
-    MatDialogModule
+    MatDialogModule,
+    FirebaseModule
     
     
   ],
